@@ -1,0 +1,17 @@
+// C++ code
+//AND NAND XOR Odd roll num
+//OR NOR XNOR Even roll num
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(7, INPUT);
+  pinMode(13,OUTPUT);
+}
+
+void loop()
+{
+  if((digitalRead(2)==LOW)&&(digitalRead(7)==LOW))
+    digitalWrite(13,HIGH);
+  else
+    digitalWrite(13,LOW);
+}

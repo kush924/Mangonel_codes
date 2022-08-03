@@ -1,0 +1,21 @@
+// C++ code
+//
+int t=500;
+void setup()
+{
+  for(int i=2;i<=6;i++){
+  pinMode(i,OUTPUT);
+  }
+}
+
+void loop()
+{
+  for(int i=2;i<=6;i++){
+  digitalWrite(i, HIGH);
+  delay(t); // Wait for 1000 millisecond(s)
+  }
+  for(int i=2;i<=6;i++){
+  digitalWrite(i, LOW);
+  delay(t); // Wait for 1000 millisecond(s)
+  }
+}
